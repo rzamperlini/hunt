@@ -8,11 +8,17 @@ import Main from './pages/main';
 const Stack = createStackNavigator();
 
 const Routes = () => {
+
     return(
-            <Stack.Navigator>
+            <Stack.Navigator screenOptions={options}>
                 <Stack.Screen name="JSHunt" component={Main}/>
             </Stack.Navigator>
     );
 }
+
+const options = {
+    headerTitleAlign: 'center',
+    
+};
 
 export default Routes;
